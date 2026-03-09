@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+    <div class="logo">LinkTheWorld</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="currency.html">Currency</a></li>
+            <li><a href="translate.html"  id="used">Translate</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="quiz.html">quiz</a></li>
+            <li><a href="favorite.html">Favorites</a></li>
+        </ul>
+    </nav>
+        <button id="themeChange" class="themechange">🌙</button>
+    </header>
+    <main id="translatorPage">
+        <div class="cardcurrent">
+            <h2>Language Translator</h2>
+            <label>Languages:</label>
+            <select id="languagemerge">
+                <option value="en|es">English to Spanish</option>
+                <option value="es|en">Spanish to English</option>
+                <option value="en|fr">English to French</option>
+                <option value="fr|en">French to English</option>
+                <option value="en|de">English to German</option>
+            </select>
+            <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+            <button id="translatebtn" class="btny">Translate Text</button>
+            <textarea id="translatedText" placeholder="Translated text will appear here" readonly></textarea>
+            <button class="btny save-btn" onclick="saveToFavs('translation',document.getElementById('translatedText').value)">Save To Favorites</button>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
